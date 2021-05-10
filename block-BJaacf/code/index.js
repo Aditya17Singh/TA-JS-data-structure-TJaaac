@@ -29,17 +29,30 @@ for(let i = 0; i < numbers.length; i++){
 }
 console.log(lowest);
 // 6. Find the even numbers in the array and print them to the console using console.log()
-for(let i = 0; i < numbers.length; i++){
-    if(numbers[i] % 2 === 0){
-      
+for(let number of numbers){
+    if(number % 2 === 0){
+        console.log(number);
     }
 }
-
 // 7. Find the odd numbers in the array and print them to the console using console.log()
-q
+for(let number of numbers){
+    if(number % 2 !== 0){
+        console.log(number,"odd")
+    }
+}
 // 8. Find the numbers in the array that is divisible by 5 and print them to the console using console.log()
-q
+for(let number of numbers){
+    if(number % 5 === 0){
+        console.log(number, "divisible by 5")
+    }
+}
 // 9. Log all the element of the array one by one
-q
+for(let number of numbers){
+    console.log(number, "each value")
+}
 // 10. Find all the number in the array that is divisible by 3
-q
+for(let number of numbers){
+    if(number % 3 === 0){
+        console.log(number,"divisible by 3")
+    }
+}
