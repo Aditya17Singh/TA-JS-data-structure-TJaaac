@@ -15,21 +15,21 @@ let newUser = user;
 - Take a photo/screenshot and add it to the folder `code`
 
 <!-- To add this image here use ![name](./hello.jpg) -->
-
+loqef
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // ihwd
+- `user === newUser;`//wqdkp
+- `user.name === newUser.name;` wlmd
+- `user.name == newUser.name;`// qdlj
+- `user.sibling == newUser.sibling;`//ojqw
+- `user.sibling === newUser.sibling;`//iwndq
+- `user.sibling == allBrothers;`//qjwm
+- `user.sibling === allBrothers;`//ijwnqd
+- `brothersCopy === allBrothers;`//lowkq
+- `brothersCopy == allBrothers;`//lmqw
+- `brothersCopy == user.sibling;`//okwq
+- `brothersCopy === user.sibling;`//wqdn
+- `brothersCopy[0] === user.sibling[0];`//wqdk
+- `brothersCopy[1] === user.sibling[1];`//qwd
+- `user.sibling[1] === newUser.sibling[1];`//qwd
