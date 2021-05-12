@@ -10,12 +10,12 @@ let person2 = person;
 
 person.firstName = 'Arya';
 
-console.log(person2.firstName); // output
-console.log(person.firstName); // output
-console.log(person.lastName); // output
-console.log(person == person2); // output
+console.log(person2.firstName); /efwfe
+console.log(person.firstName); // ef
+console.log(person.lastName); // wefw
+console.log(person == person2); //wewf
 console.log(person === person2); // output
-console.log(person.lastName === person2.lastName); // output
+console.log(person.lastName === person2.lastName); // wef
 ```
 
 2. Write the output with reason:
@@ -44,7 +44,7 @@ console.log(person.firstName === personTwo.firstName); // output
 console.log(person == personTwo); // output
 console.log(person === personTwo); // output
 console.log(person.address === personTwo.address); // output
-console.log(person.address == personTwo.address); // output
+console.log(person.address == personTwo.address); // wefwf
 console.log(personTwo.address.city); // output
 console.log(person.address.city); // output
 console.log(person.address.city == personTwo.address.city); // output
@@ -73,7 +73,7 @@ console.log(personTwo.firstName); // output
 console.log(person.firstName); // output
 console.log(personTwo.lastName); // output
 console.log(person.firstName === personTwo.firstName); // output
-console.log(person == personTwo); // output
+console.log(person == personTwo); // efwef
 console.log(person === personTwo); // output
 console.log(person.address === personTwo.address); // output
 console.log(person.address == personTwo.address); // output
@@ -103,7 +103,8 @@ let blogs = [
   },
 ];
 
-// Your code goes here
+let clonedBlogs = [...blogs];
+console.log(clonedBlogs)
 ```
 
 5. Clone the `question` variable into a new variable named `questionClone`
@@ -128,7 +129,8 @@ var questions = [
   },
 ];
 
-// Your code goes here
+let questionClone = [...questions]
+console.log(questionClone);
 ```
 
 6. Clone the `allBlogs` variable into a new variable named `allBlogsClone`
@@ -155,7 +157,8 @@ var allBlogs = {
   ],
 };
 
-// Your code goes here
+let allBlogsClone = {...allBlogs}
+console.log(allBlogs)
 ```
 
 7. Clone the `person` variable into a new variable named `clonedPerson`
@@ -188,14 +191,14 @@ let person = [
   },
 ];
 
-// Your code goes here
+ooo,o
 ```
 
 8. Write a function named `cloneObject` that accepts an object and returns the clone of the object
 
 ```js
 function cloneObject() {
-  // your code
+  mop
 }
 
 // Run the test below to check your function
