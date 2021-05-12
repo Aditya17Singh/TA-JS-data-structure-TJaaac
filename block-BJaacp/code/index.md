@@ -1,18 +1,18 @@
 1. What will be the output and explain the reason.
 
 ```js
-let obj = { name: 'Arya' };ijo
-obj = { surname: 'Stark' };i
-let newObj = { name: 'Arya' };i
-let user = obj;oj
-let arr = ['Hi'];kjin
-let arr2 = arr;ioj
+let obj = { name: 'Arya' };
+obj = { surname: 'Stark' };
+let newObj = { name: 'Arya' };
+let user = obj;
+let arr = ['Hi'];
+let arr2 = arr;
 ```
 
 Answer the following with reason after going through the above code:
 
 - `[10] === [10]`// true
-- What is the value of obj? //
+- What is the value of obj? // {surname: 'Stark'}
 - `obj == newObj`// false
 - `obj === newObj`// false
 - `user === newObj`// false
@@ -33,8 +33,8 @@ function personDetails(person) {
 }
 var person1 = { name: 'Alex', age: 30 };
 var person2 = personDetails(person1);
-console.log(person1);oij
-console.log(person2);ojk
+console.log(person1);
+console.log(person2);
 ```
 
 3. What will be the output of the below code:
@@ -46,6 +46,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. false
+console.log(user.brothers === brothers); //1. true
 console.log(user.brothers.length === brothers.length); //2. true
 ```
