@@ -89,12 +89,14 @@ console.log(times(5 , "test"));
 
 function revert(arr) {
   let arrays = [];
-  for(let i = 0; i > arr; i--){
-    arr.push(arrays)
+  for(let i = arr.length-1; i >= 0; i--){
+    arrays.push(arr[i])
   }
   return arrays;
 }
 console.log(revert([1, 2, 3, 4])); 
+console.log(revert(['a', 'd', 'c', 'b'])); 
+console.log(revert(['Ryan', 'John', 'Bran']));
 // Uncomment the code below and test the output
 // console.log(revert([1, 2, 3, 4])); // [4, 3, 2, 1]
 // console.log(revert(['a', 'd', 'c', 'b'])); // ['b', 'c', 'd', 'a']
@@ -112,16 +114,23 @@ console.log(revert([1, 2, 3, 4]));
     clear(['a', undefined, 'd', 0,  'c', 'b']); // ['b', 'c', 'd', 'a']
     clear(['Ryan', null, 0,  'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
-
-function clear() {
-  function times() {
-    let array = [];
-    for(let i = 0 ; i < 10; i++){
-      array.push(i)
-    }
-    return array;
-  }
+function isUnwanted(value){
+  return value == false ||
+  value == null ||
+  value == "" ||
+  value == undefined ||
+  value == 0
 }
+function clear(arr) {
+  let final =[];
+  for(let value of arr){
+    if(!isUnwanted(value))
+    final.push(value)
+  }
+  return final;
+}
+ 
+console.log(clear([1, 2, 3, 4, "", 0, null, undefined]));
 
 // Uncomment the code below and test the output
 // console.log(clear([1, 2, 3, 4, '', 0, null, undefined])); // [4, 3, 2, 1]
@@ -142,16 +151,14 @@ function clear() {
     arrayToObj(['Ryan', 'John']); // {0: 'Ryan', 1: 'John'}
 */
 
-function arrayToObj() {
-  function times() {
-    let array = [];
-    for(let i = 0 ; i < 10; i++){
-      array.push(i)
-    }
-    return array;
+function arrayToObj(arr) {
+  let obj = {};
+  for(i = 0; i <= arr.length - 1; i++){
+    obj[i] = arr[i];
   }
+  return obj;
 }
-
+console.log(arrayToObj([1, 2, 3, 4]));
 // Uncomment the code below and test the output
 // console.log(arrayToObj([1, 2, 3, 4])); // {0: 1, 1: 2, 2: 3, 3: 4}
 // console.log(arrayToObj(['a', undefined, 'd'])); // {0: 'a', 1: undefined, 2: 'd'}
